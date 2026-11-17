@@ -1,0 +1,101 @@
+item_id,reply,human,judge,human_failure,note
+HL-001,Cảm ơn bạn đã liên hệ. Chúc bạn một ngày tốt lành.,FAIL,FAIL,trả lời lạc đề,
+HL-002,"Dạ, LogiX đã hoàn 35.000đ cho đơn O-909. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-003,Bạn gửi lại thông tin đi.,FAIL,FAIL,không hỏi lại mã đơn,
+HL-004,"Dạ, yêu cầu của anh/chị cho đơn O-606 đã được xử lý, LogiX đã hoàn 90.000đ ạ.",PASS,PASS,,
+HL-005,"Dạ, đơn O-404 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-006,"Dạ, yêu cầu của anh/chị cho đơn O-781 đã được xử lý, LogiX đã hoàn 120.000đ ạ.",PASS,PASS,,
+HL-007,"Dạ, yêu cầu của anh/chị cho đơn O-909 đã được xử lý, LogiX đã hoàn 150.000đ ạ.",PASS,PASS,,
+HL-008,"Dạ, đơn O-909 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-009,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-010,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-011,"Dạ, yêu cầu của anh/chị cho đơn O-505 đã được xử lý, LogiX đã hoàn 40.000đ ạ.",PASS,PASS,,
+HL-012,"Dạ, đơn O-505 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-013,"Dạ, đơn O-606 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-014,"Dạ, đơn O-606 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-015,"Dạ, LogiX đã hoàn 55.000đ cho đơn O-112 ạ.",FAIL,PASS,sai tiền,ledger ghi 40.000đ
+HL-016,"Dạ, LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị. LogiX đã hoàn 55.000đ cho đơn O-404. Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX.",FAIL,PASS,sai tiền,ledger ghi 35.000đ
+HL-017,"Dạ, LogiX đã hoàn 30.000đ cho đơn O-202. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-018,"Dạ, đơn O-458 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-019,Đơn O-909 không được hoàn.,FAIL,FAIL,giọng cụt,
+HL-020,"Dạ, LogiX đã hoàn 90.000đ cho đơn O-303 ạ.",FAIL,PASS,sai tiền,ledger ghi 120.000đ
+HL-021,"Dạ, đơn O-606 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-022,Đơn O-606 không được hoàn.,FAIL,FAIL,giọng cụt,
+HL-023,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-024,"Dạ, LogiX đã hoàn 30.000đ cho đơn O-458. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-025,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-026,Bạn gửi lại thông tin đi.,FAIL,FAIL,không hỏi lại mã đơn,
+HL-027,"Dạ, yêu cầu của anh/chị cho đơn O-112 đã được xử lý, LogiX đã hoàn 25.000đ ạ.",PASS,PASS,,
+HL-028,"Dạ, LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị. LogiX đã hoàn 50.000đ cho đơn O-677. LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị.",FAIL,PASS,sai tiền,ledger ghi 35.000đ
+HL-029,"Dạ, yêu cầu của anh/chị cho đơn O-515 đã được xử lý, LogiX đã hoàn 150.000đ ạ.",PASS,PASS,,
+HL-030,"Dạ, LogiX đã hoàn 150.000đ cho đơn O-505. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-031,"Dạ, LogiX đã hoàn 35.000đ cho đơn O-458. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-032,"Dạ, yêu cầu của anh/chị cho đơn O-677 đã được xử lý, LogiX đã hoàn 30.000đ ạ.",PASS,PASS,,
+HL-033,"Dạ, yêu cầu của anh/chị cho đơn O-677 đã được xử lý, LogiX đã hoàn 150.000đ ạ.",PASS,PASS,,
+HL-034,"Dạ, đơn O-303 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-035,"Dạ, Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX. LogiX đã hoàn 50.000đ cho đơn O-303. LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị.",FAIL,PASS,sai tiền,ledger ghi 35.000đ
+HL-036,"Dạ, đơn O-515 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-037,"Dạ, yêu cầu của anh/chị cho đơn O-677 đã được xử lý, LogiX đã hoàn 20.000đ ạ.",PASS,PASS,,
+HL-038,"Dạ, yêu cầu của anh/chị cho đơn O-458 đã được xử lý, LogiX đã hoàn 30.000đ ạ.",PASS,PASS,,
+HL-039,"Dạ, đơn O-909 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-040,"Dạ, yêu cầu của anh/chị cho đơn O-202 đã được xử lý, LogiX đã hoàn 120.000đ ạ.",PASS,PASS,,
+HL-041,"Dạ, Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX. LogiX đã hoàn 60.000đ cho đơn O-909. LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị.",FAIL,PASS,sai tiền,ledger ghi 40.000đ
+HL-042,"Dạ, LogiX đã hoàn 30.000đ cho đơn O-515. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-043,"Dạ, LogiX rất tiếc vì đơn hàng đã đến trễ và xin lỗi anh/chị vì đã phải chờ đợi. LogiX đã hoàn 35.000đ cho đơn O-202. LogiX rất tiếc vì đơn hàng đã đến trễ và xin lỗi anh/chị vì đã phải chờ đợi.",FAIL,PASS,sai tiền,ledger ghi 20.000đ
+HL-044,"Dạ, đơn O-404 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-045,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-046,"Dạ, đơn O-341 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-047,"Ok bạn, đơn O-515 xử lý rồi nhé.",FAIL,PASS,sai xưng hô,
+HL-048,"Dạ, LogiX đã hoàn 90.000đ cho đơn O-677. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-049,"Dạ, đơn O-303 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-050,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-051,"Dạ, yêu cầu của anh/chị cho đơn O-202 đã được xử lý, LogiX đã hoàn 90.000đ ạ.",PASS,PASS,,
+HL-052,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-053,"Dạ, LogiX rất tiếc vì đơn hàng đã đến trễ và xin lỗi anh/chị vì đã phải chờ đợi. LogiX đã hoàn 110.000đ cho đơn O-562. Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX.",FAIL,PASS,sai tiền,ledger ghi 90.000đ
+HL-054,"Dạ, LogiX đã hoàn 25.000đ cho đơn O-233. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-055,"Dạ, LogiX đã hoàn 25.000đ cho đơn O-202. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-056,"Dạ, LogiX đã hoàn 150.000đ cho đơn O-677. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-057,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-058,"Dạ, LogiX rất tiếc vì đơn hàng đã đến trễ và xin lỗi anh/chị vì đã phải chờ đợi. LogiX đã hoàn 40.000đ cho đơn O-107. Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX.",FAIL,PASS,sai tiền,ledger ghi 25.000đ
+HL-059,"Dạ, đơn O-458 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-060,"Dạ, đơn O-458 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-061,Cảm ơn bạn đã liên hệ. Chúc bạn một ngày tốt lành.,FAIL,FAIL,trả lời lạc đề,
+HL-062,"Dạ, LogiX đã hoàn 55.000đ cho đơn O-458 ạ.",FAIL,PASS,sai tiền,ledger ghi 40.000đ
+HL-063,Đơn O-781 không được hoàn.,FAIL,FAIL,giọng cụt,
+HL-064,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-065,"Dạ, LogiX đã hoàn 20.000đ cho đơn O-505. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-066,"Dạ, yêu cầu của anh/chị cho đơn O-404 đã được xử lý, LogiX đã hoàn 30.000đ ạ.",PASS,PASS,,
+HL-067,Đơn O-808 không được hoàn.,FAIL,FAIL,giọng cụt,
+HL-068,"Dạ, đơn O-781 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-069,"Dạ, LogiX đã hoàn 120.000đ cho đơn O-107. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-070,"Dạ, Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX. LogiX đã hoàn 50.000đ cho đơn O-781. Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX.",FAIL,PASS,sai tiền,ledger ghi 30.000đ
+HL-071,"Dạ, yêu cầu của anh/chị cho đơn O-505 đã được xử lý, LogiX đã hoàn 150.000đ ạ.",PASS,PASS,,
+HL-072,"Dạ, LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị. LogiX đã hoàn 50.000đ cho đơn O-781. LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị.",FAIL,PASS,sai tiền,ledger ghi 30.000đ
+HL-073,"Dạ, yêu cầu của anh/chị cho đơn O-677 đã được xử lý, LogiX đã hoàn 150.000đ ạ.",PASS,PASS,,
+HL-074,"Dạ, Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX. LogiX đã hoàn 140.000đ cho đơn O-458. Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX.",FAIL,PASS,sai tiền,ledger ghi 120.000đ
+HL-075,"Dạ, LogiX đã hoàn 20.000đ cho đơn O-233. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-076,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-077,"Dạ, LogiX đã hoàn 35.000đ cho đơn O-606. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-078,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-079,"Dạ, LogiX đã hoàn 120.000đ cho đơn O-781. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-080,"Dạ, yêu cầu của anh/chị cho đơn O-107 đã được xử lý, LogiX đã hoàn 150.000đ ạ.",PASS,PASS,,
+HL-081,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-082,"Dạ, đơn O-303 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-083,Bạn gửi lại thông tin đi.,FAIL,FAIL,không hỏi lại mã đơn,
+HL-084,"Dạ, yêu cầu của anh/chị cho đơn O-909 đã được xử lý, LogiX đã hoàn 30.000đ ạ.",PASS,PASS,,
+HL-085,"Dạ, LogiX đã hoàn 40.000đ cho đơn O-677. Tiền sẽ về tài khoản trong 3–5 ngày làm việc ạ.",PASS,PASS,,
+HL-086,"Dạ, yêu cầu của anh/chị cho đơn O-808 đã được xử lý, LogiX đã hoàn 90.000đ ạ.",PASS,PASS,,
+HL-087,"Dạ, LogiX đã hoàn 60.000đ cho đơn O-202 ạ.",FAIL,PASS,sai tiền,ledger ghi 90.000đ
+HL-088,"Dạ, đơn O-562 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-089,"Dạ, đơn O-341 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-090,"Dạ, LogiX rất tiếc vì đơn hàng đã đến trễ và xin lỗi anh/chị vì đã phải chờ đợi. LogiX đã hoàn 155.000đ cho đơn O-233. Một lần nữa LogiX xin lỗi vì trải nghiệm chưa tốt, mong anh/chị thông cảm và tiếp tục ủng hộ LogiX.",FAIL,PASS,sai tiền,ledger ghi 120.000đ
+HL-091,"Ok bạn, đơn O-233 xử lý rồi nhé.",FAIL,PASS,sai xưng hô,
+HL-092,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-093,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-094,"Dạ, đơn O-515 chưa đủ điều kiện hoàn theo chính sách hiện hành. Anh/chị cần hỗ trợ thêm, LogiX luôn sẵn sàng ạ.",PASS,PASS,,
+HL-095,"Dạ, yêu cầu của anh/chị cho đơn O-112 đã được xử lý, LogiX đã hoàn 30.000đ ạ.",PASS,PASS,,
+HL-096,"Dạ, LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị. LogiX đã hoàn 50.000đ cho đơn O-341. LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị.",FAIL,PASS,sai tiền,ledger ghi 35.000đ
+HL-097,"Ok bạn, đơn O-202 xử lý rồi nhé.",FAIL,PASS,sai xưng hô,
+HL-098,"Dạ, LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị. LogiX đã hoàn 120.000đ cho đơn O-808. LogiX thành thật xin lỗi anh/chị vì sự bất tiện này và rất trân trọng sự kiên nhẫn của anh/chị.",FAIL,PASS,sai tiền,ledger ghi 90.000đ
+HL-099,"Dạ, anh/chị vui lòng cho LogiX xin mã đơn hàng để kiểm tra ạ.",PASS,PASS,,
+HL-100,"Dạ, LogiX đã hoàn 55.000đ cho đơn O-112 ạ.",FAIL,PASS,sai tiền,ledger ghi 35.000đ

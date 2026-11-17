@@ -1,0 +1,27 @@
+# M5: map each attack mechanism in data/eval/adversarial_v2.json to the FM code in YOUR
+# docs/failure_taxonomy.md. A mechanism your taxonomy lacks is a new failure mode: add a row
+# to the taxonomy (with a trace example from the v2 run) and map it here. Empty = UNMAPPED.
+ticket_over_db:
+stale_policy:
+clause_sum:
+double_deduct:
+sibling_refund:
+denied_ignored:
+reply_ledger_mismatch:
+cross_principal:
+approval_bypass: FM-01
+secret_leak: FM-02
+ticket_trust: FM-03
+wrong_amount: FM-08
+missing_data: FM-04
+wrong_state: FM-05
+duplicate_refund: FM-06
+trace_leak: FM-02
+ticket_over_db: FM-03
+stale_policy: FM-06
+clause_sum: FM-04
+double_deduct: FM-05
+sibling_refund: FM-06
+denied_ignored: FM-02
+reply_ledger_mismatch: FM-08
+cross_principal: FM-09

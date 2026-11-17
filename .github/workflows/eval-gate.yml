@@ -1,0 +1,85 @@
+name: lab9-eval-gate
+on: [pull_request, workflow_dispatch]
+permissions: {contents: read}
+concurrency: {group: "eval-gate-${{ github.ref }}", cancel-in-progress: true}
+jobs:
+  # The starter repo is an overlay without src/lab8; its CI only runs once copied into a Lab 8 repo.
+  detect:
+    runs-on: ubuntu-latest
+    outputs: {lab8: "${{ steps.has.outputs.lab8 }}"}
+    steps:
+      - uses: actions/checkout@v7
+        with: {persist-credentials: false}
+      - id: has
+        run: "test -d src/lab8 && echo lab8=1 >> \"$GITHUB_OUTPUT\" || echo skip, overlay without src/lab8"
+
+  eval-gate:
+    needs: detect
+    if: needs.detect.outputs.lab8
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONUTF8: "1"
+      EVAL_SPEC: config/metric_spec.yaml
+      # Committed by the team after M4 (re-run on main, never hand-edited).
+      EVAL_BASELINE: reports/baseline_v1.json
+    defaults: {run: {working-directory: src}}
+    steps:
+      - uses: actions/checkout@v7
+        with: {persist-credentials: false}
+      # setup-uv publishes only full tags (no @v10); pin the SHA.
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with: {python-version: "3.13", activate-environment: true, enable-cache: true, cache-dependency-glob: "src/requirements*.txt"}
+      - run: uv pip install -r requirements.txt -r requirements-lab9.txt
+      - run: python -m lab9.smoke
+      - run: python -m pytest -q -m student -o addopts= -k "lab9 and not advanced"
+      - run: python -m lab9.evalset --check
+      - name: Evaluate and gate the PR swarm
+        shell: bash
+        run: |
+          python -m lab9.eval --shape swarm --spec "$EVAL_SPEC" --out reports/eval_pr.json
+          python -m lab9.gate --pr reports/eval_pr.json --baseline "$EVAL_BASELINE" --spec "$EVAL_SPEC"
+      - name: Check the committed baseline and the M3 metric
+        run: python -m lab9.ci_check --pr reports/eval_pr.json --baseline "$EVAL_BASELINE" --spec "$EVAL_SPEC"
+      - name: Verify the gate accepts fixed
+        shell: bash
+        run: |
+          python -m lab9.eval --shape fixed --spec "$EVAL_SPEC" --out reports/eval_fixed.json
+          python -m lab9.gate --pr reports/eval_fixed.json --baseline "$EVAL_BASELINE" --spec "$EVAL_SPEC"
+      - name: Verify the gate blocks seeded_regression
+        shell: bash
+        run: |
+          python -m lab9.eval --shape seeded_regression --spec "$EVAL_SPEC" --out reports/eval_seeded_regression.json
+          gate_status=0
+          gate_output=$(python -m lab9.gate --pr reports/eval_seeded_regression.json --baseline "$EVAL_BASELINE" --spec "$EVAL_SPEC") || gate_status=$?
+          printf '%s\n' "$gate_output"
+          # A Python exception can also exit 1. Require the explicit pass_rate verdict.
+          if [[ "$gate_status" -ne 1 ]] || ! grep -Eq '^exit 1 — blocked: ([^,]+, )*pass_rate(, |$)' <<< "$gate_output"; then
+            echo "Expected the gate to block seeded_regression on pass_rate with exit 1 (got $gate_status)."
+            exit 1
+          fi
+
+  # Advanced/Expert (M5-M7). Runs only once the team commits reports/baseline_v2.json, so a
+  # Core-only submission stays green. Exit 1 = a survived mutant or a false alarm.
+  eval-gate-v2:
+    needs: eval-gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env: {PYTHONUTF8: "1"}
+    defaults: {run: {working-directory: src}}
+    steps:
+      - uses: actions/checkout@v7
+        with: {persist-credentials: false}
+      - id: has
+        run: "test -f reports/baseline_v2.json && echo v2=1 >> \"$GITHUB_OUTPUT\" || echo skip, no baseline_v2"
+      - if: steps.has.outputs.v2
+        uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with: {python-version: "3.13", activate-environment: true, enable-cache: true, cache-dependency-glob: "src/requirements*.txt"}
+      - if: steps.has.outputs.v2
+        run: uv pip install -r requirements.txt -r requirements-lab9.txt
+      - if: steps.has.outputs.v2
+        run: python -m pytest -q -m student -o addopts= -k advanced
+      - if: steps.has.outputs.v2
+        run: python -m lab9.evalset --v2
+      - if: steps.has.outputs.v2
+        run: python -m lab9.mutation --spec config/metric_spec_v2.yaml --baseline reports/baseline_v2.json

@@ -1,0 +1,3 @@
+pydantic-evals==2.68.0
+numpy>=2.2
+scipy>=1.15
