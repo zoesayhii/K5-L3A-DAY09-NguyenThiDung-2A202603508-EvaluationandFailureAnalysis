@@ -3,7 +3,7 @@
 Điền sau dấu `:` trên cùng dòng, không xóa nhãn. Giảng viên và `python -m lab8.check_submission` (chạy trong `src/`) đọc các dòng này bằng máy. Không đổi tên hay dời file này khỏi `report/team/`.
 
 - Shape chọn: workflow
-- Commit hash: bf14df4
+- Commit hash: be22ff0
 - Run id dẫn chứng: R-workflow-C-001-s11 (đối chiếu cùng claim/seed: R-orchestrator-C-001-s11)
 - Pass rate / pass^5 / seed min-max / variance: 1.000 / 1.000 / 1.000–1.000 / 0.000000 (70 trial public)
 - Cost per success (mô phỏng, VND): 27.86
