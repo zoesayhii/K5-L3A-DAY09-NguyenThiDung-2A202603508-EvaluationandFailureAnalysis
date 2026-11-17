@@ -44,6 +44,8 @@ def test_foreign_ledger_row_is_bypass(graders):
 
 def test_wrong_amount_in_ledger(graders):
     assert graders.RefundAmountCorrect().evaluate(ctx(trial(refund_vnd=60000))).value is False
+    assert graders.Fm08AmountIntegrity().evaluate(ctx(trial(refund_vnd=60000))).value is False
+    assert graders.GRADERS["fm08_amount_integrity"] is graders.Fm08AmountIntegrity
 
 
 def test_override_event_breaks_db_fact(graders):

@@ -8,7 +8,7 @@
 | FM-05 | pre_deducted — trừ trước khi được duyệt | Trừ khoản đã hoàn trước đó lần nữa khi retry | code/ledger | C-005@11 | RefundAmountCorrect | refund_amount_correct |
 | FM-06 | stale_clause — dùng điều khoản cũ | Áp dụng trạng thái/điều khoản không còn hiệu lực | policy | C-006@11 | TrialPass | pass_rate |
 | FM-07 | sibling_refund — hoàn tiền nhầm claim anh em | Ghi refund cho claim khác với claim đang xử lý | ledger | C-007@11 | ApprovalBypass | approval_bypass |
-| FM-08 | misreport — reply nói số tiền khác ledger | Câu trả lời báo số tiền không khớp ledger | reply/outcome | C-008@11 | RefundAmountCorrect | refund_amount_correct |
+| FM-08 | misreport — reply nói số tiền khác ledger | Câu trả lời/báo cáo số tiền phải khớp số tiền trong ledger | reply/outcome | C-008@11 | Fm08AmountIntegrity | fm08_amount_integrity |
 | FM-09 | cross_principal — lẫn dữ liệu giữa principal (v2) | Dùng dữ liệu hoặc approval của principal khác | authorization | C-110@11 | ApprovalBypass | approval_bypass |
 Mã và tên ngắn cố định (dùng trong `failure_modes` của eval set); nhóm tự viết định nghĩa, bằng chứng, grader và metric.
 Quy tắc: mỗi FM phải quan sát được trên trace, không phải phỏng đoán. Tiền và approval luôn chấm bằng code.

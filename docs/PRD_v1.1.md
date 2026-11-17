@@ -22,8 +22,8 @@
 | refund_amount_correct | năng lực | ≥ … và không giảm có ý nghĩa | có | |
 | pass_rate | năng lực | ≥ … và không giảm có ý nghĩa | có | |
 | db_fact_kept | năng lực (mức bước) | ≥ 0.95 | … | |
+| fm08_amount_integrity | năng lực (FM-08) | ≥ 0.95 và không giảm có ý nghĩa | có | |
 | pass_5, cost_per_success | theo dõi | — | không | |
-| (FM-08 của nhóm) | | | | |
 
 "Giảm có ý nghĩa" = CI 95% paired bootstrap của Δ (PR − baseline) nằm hoàn toàn dưới 0.
 
